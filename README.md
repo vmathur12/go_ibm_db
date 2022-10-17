@@ -20,7 +20,7 @@ yum install go git tar libpam
 ```
 
 ## Note:
- Environment variable DB2HOME name is changed to IBM_DB2_HOME.
+ Environment variable DB2HOME name is changed to IBM_DB_HOME.
 
 ## How to Install in Windows
 ```
