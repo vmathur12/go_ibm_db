@@ -23,8 +23,3 @@ else
 fi
 
 export PATH=$PATH:$IBM_DB_HOME/bin
-
-echo "IBM_DB_HOME = " $IBM_DB_HOME
-echo "CGO_CFLAGS = " $CGO_CFLAGS
-echo "CGO_LDFLAGS = " $CGO_LDFLAGS
-echo "LD_LIBRARY_PATH" = $LD_LIBRARY_PATH
