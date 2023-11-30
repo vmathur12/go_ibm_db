@@ -16,7 +16,7 @@ func TestBigintArray(t *testing.T) {
 // A big integer is a binary integer with a precision of 63 bits. The range of big integers is -9223372036854775808 to +9223372036854775807.
 func BigintArray() error {
         var tableOne string= "goarr"
-        fmt.Println("Inside BigintArray funtion-----")
+	
         db := Createconnection()
         defer db.Close()
 
