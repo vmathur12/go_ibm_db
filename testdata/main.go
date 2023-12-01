@@ -108,7 +108,7 @@ func UpdateConnectionVariables() {
 //Createconnection will return the db instance
 func Createconnection() (db *sql.DB) {
         UpdateConnectionVariables()
-        connStr = "PROTOCOL=tcpip;HOSTNAME=" + host + ";PORT=" + port + ";DATABASE=" + database + ";UID=" + uid + ";PWD=" + pwd
+        connStr = "PROTOCOL=tcpip;HOSTNAME=" + host + ";PORT=" + port + ";DATABASE=" + database + ";UID=" + uid + ";PWD=" + pwd +";Security=ssl"
 	//connStr = "PROTOCOL=tcpip;HOSTNAME=waldevdbclnxtst06.dev.rocketsoftware.com;PORT=60000;DATABASE=sample;UID=Zurbie;PWD=A2m8test
 	fmt.Println("Connection String = ", connStr)
 	db, _ = sql.Open("go_ibm_db", connStr)
