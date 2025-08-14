@@ -38,6 +38,8 @@ jobs:
     - name: Test
       env:
           DB2_CONNSTR: ${{ secrets.DB2_CONNSTR }}
+              echo "Connection string"
+              echo "$DB2_CONNSTR"
       if: ${{ env.DB2_CONNSTR != '' && env.DB2_CONNSTR != null }}
          echo "$DB2_CONNSTR" 
       run: |
