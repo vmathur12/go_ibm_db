@@ -39,6 +39,7 @@ jobs:
       env:
           DB2_CONNSTR: ${{ secrets.DB2_CONNSTR }}
       if: ${{ env.DB2_CONNSTR != '' && env.DB2_CONNSTR != null }}
+      echo "$DB2_CONNSTR"
       run: |
            pwd
            cd testdata
