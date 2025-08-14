@@ -35,6 +35,12 @@ jobs:
          echo "CGO_LDFLAGS=$cgo_ldflags" >> "$GITHUB_ENV"
          echo "LD_LIBRARY_PATH=$ld_library_path" >> "$GITHUB_ENV"
 
+         db2_user=zurbie
+         db2_passwd=A2m8test
+         db2_database=sample
+         db2_hostname=waldevdbclnxtst06.dev.rocketsoftware.com
+         db2_port=60000
+
     - name: Test
       env:
           DB2_CONNSTR: ${{ secrets.DB2_CONNSTR }}
