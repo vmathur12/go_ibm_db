@@ -1,7 +1,7 @@
 { "DRIVER" : "{DB2 ODBC Driver}",
   "DATABASE" : "SAMPLE",
-  "UID" : "db2user",
-  "PWD" : "xxxxxxx",
+  "UID" : "zurbie",
+  "PWD" : "A2m8test",
   "HOSTNAME" : "waldevdbclnxtst06.dev.rocketsoftware.com",
   "PORT" : "60000",
   "PROTOCOL" : "TCPIP" 
