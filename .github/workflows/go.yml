@@ -40,14 +40,17 @@ jobs:
          db2_database=sample
          db2_hostname=waldevdbclnxtst06.dev.rocketsoftware.com
          db2_port=60000
+         echo "DB2_USER=$db2_user" >> "$GITHUB_ENV"
+         echo "DB2_PASSWD=$db2_passwd" >> "$GITHUB_ENV"
+         echo "DB2_DATABASE=$db2_database" >> "$GITHUB_ENV"
+         echo "DB2_HOSTNAME=$db2_hostname" >> "$GITHUB_ENV"
+         echo "DB2_PORT=$db2_port" >> "$GITHUB_ENV"
 
     - name: Test
       env:
           DB2_CONNSTR: ${{ secrets.DB2_CONNSTR }}
-              echo "Connection string"
               echo "$DB2_CONNSTR"
-      if: ${{ env.DB2_CONNSTR != '' && env.DB2_CONNSTR != null }}
-         echo "$DB2_CONNSTR" 
+      if: ${{ env.DB2_CONNSTR != '' && env.DB2_CONNSTR != null }} 
       run: |
            pwd
            cd testdata
